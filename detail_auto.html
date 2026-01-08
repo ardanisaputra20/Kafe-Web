@@ -1,230 +1,475 @@
 <!DOCTYPE html>
 <html class="light" lang="id">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Detail Kafe | SurabayaCafeFinder</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Kafe | SurabayaCafeFinder</title>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200"
+      rel="stylesheet"
+    />
 
-<style>
-.material-symbols-outlined {font-variation-settings: 'FILL' 0, 'wght' 400}
-.material-symbols-outlined.fill {font-variation-settings: 'FILL' 1}
-</style>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400;
+      }
+      .material-symbols-outlined.fill {
+        font-variation-settings: "FILL" 1;
+      }
+    </style>
 
-<script>
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "primary": "#A16207",
-        "background-light": "#FEFCE8",
-        "background-dark": "#1F2937",
-        "secondary": "#FDE68A",
-        "text-light": "#1F2937",
-        "text-dark": "#FEFCE8",
-        "text-muted-light": "#6b7280",
-        "text-muted-dark": "#d1d5db"
-      },
-      fontFamily: {"display": ["Plus Jakarta Sans", "sans-serif"]}
-    }
-  }
-}
-</script>
-</head>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#A16207",
+              "background-light": "#FEFCE8",
+              "background-dark": "#1F2937",
+              secondary: "#FDE68A",
+              "text-light": "#1F2937",
+              "text-dark": "#FEFCE8",
+              "text-muted-light": "#6b7280",
+              "text-muted-dark": "#d1d5db",
+            },
+            fontFamily: { display: ["Plus Jakarta Sans", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+  </head>
 
-<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark"
+  >
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <div
+        class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5"
+      >
+        <div class="flex flex-col w-full max-w-[960px] flex-1">
+          <header
+            class="flex items-center justify-between border-b border-primary/20 px-4 sm:px-10 py-4"
+          >
+            <div class="flex items-center gap-3">
+              <div class="size-6 text-primary">
+                <svg
+                  fill="none"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44 11.27C44 14.01 39.83 16.39 33.69 17.63C39.83 18.87 44 21.26 44 24C44 26.73 39.83 29.12 33.69 30.36C39.83 31.6 44 33.98 44 36.72C44 40.74 35.04 44 24 44C12.95 44 4 40.74 4 36.72C4 33.98 8.16 31.6 14.31 30.36C8.16 29.12 4 26.73 4 24C4 21.26 8.16 18.87 14.31 17.63C8.16 16.39 4 14.01 4 11.27C4 7.25 12.95 4 24 4C35.04 4 44 7.25 44 11.27Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-xl font-bold">SurabayaCafeFinder</h2>
+            </div>
 
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
-<div class="flex flex-col w-full max-w-[960px] flex-1">
+            <nav class="hidden md:flex flex-1 justify-end">
+              <div class="flex items-center gap-9">
+                <a
+                  class="text-sm font-medium hover:text-primary"
+                  href="index.html"
+                  >Beranda</a
+                >
+                <a
+                  class="text-sm font-medium hover:text-primary"
+                  href="daftar_kafe.html"
+                  >Daftar Kafe</a
+                >
+                <a
+                  class="text-sm font-medium hover:text-primary"
+                  href="about_page.html"
+                  >Tentang Kami</a
+                >
+              </div>
+            </nav>
+          </header>
 
-<header class="flex items-center justify-between border-b border-primary/20 px-4 sm:px-10 py-4">
-<div class="flex items-center gap-3">
-<div class="size-6 text-primary">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 11.27C44 14.01 39.83 16.39 33.69 17.63C39.83 18.87 44 21.26 44 24C44 26.73 39.83 29.12 33.69 30.36C39.83 31.6 44 33.98 44 36.72C44 40.74 35.04 44 24 44C12.95 44 4 40.74 4 36.72C4 33.98 8.16 31.6 14.31 30.36C8.16 29.12 4 26.73 4 24C4 21.26 8.16 18.87 14.31 17.63C8.16 16.39 4 14.01 4 11.27C4 7.25 12.95 4 24 4C35.04 4 44 7.25 44 11.27Z" fill="currentColor"/>
-</svg>
-</div>
-<h2 class="text-xl font-bold">SurabayaCafeFinder</h2>
-</div>
+          <main
+            class="flex-grow py-10 px-4 sm:px-6 md:px-8"
+            id="detailContainer"
+          ></main>
 
-<nav class="hidden md:flex flex-1 justify-end">
-<div class="flex items-center gap-9">
-<a class="text-sm font-medium hover:text-primary" href="home_page.html">Beranda</a>
-<a class="text-sm font-medium hover:text-primary" href="daftar_kafe.html">Daftar Kafe</a>
-<a class="text-sm font-medium hover:text-primary" href="about_page.html">Tentang Kami</a>
-</div>
-</nav>
-</header>
+          <footer
+            class="mt-auto border-t border-primary/20 py-8 text-center text-sm text-text-muted-light dark:text-text-muted-dark"
+          >
+            © 2025 SurabayaCafeFinder. Hak Cipta Dilindungi.
+          </footer>
+        </div>
+      </div>
+    </div>
 
-<main class="flex-grow py-10 px-4 sm:px-6 md:px-8" id="detailContainer">
+    <script>
+      /* MENGGUNAKAN DATA ASLI DARI DAFTAR KAFE SEBAGAI FALLBACK */
+      const cafes = {
+        "titik-koma": {
+          name: "Titik Koma Coffee",
+          position: [-7.3207, 112.7668],
+          rating: 4.8,
+          address: "Jl. Juwingan No.110, Surabaya Timur",
+          detailUrl: "titik_koma.html",
+        },
+        kudos: {
+          name: "Kudos Cafe",
+          position: [-7.2885, 112.6694],
+          rating: 4.6,
+          address: "Pakuwon Square AK 2, Surabaya Barat",
+          detailUrl: "kudos.html",
+        },
+        redback: {
+          name: "Redback Specialty Coffee",
+          position: [-7.2859, 112.7199],
+          rating: 4.7,
+          address: "Jl. Raya Darmo Permai III, Surabaya Barat",
+          detailUrl: "redback.html",
+        },
+        "kopi-janji": {
+          name: "Kopi Janji Jiwa",
+          position: [-7.2756, 112.7421],
+          rating: 4.5,
+          address: "Jl. Basuki Rahmat, Surabaya Pusat",
+          detailUrl: "kopi_janji.html",
+        },
+        tuku: {
+          name: "Tuku Coffee",
+          position: [-7.2893, 112.7349],
+          rating: 4.7,
+          address: "Jl. Raya Darmo, Surabaya Selatan",
+          detailUrl: "tuku.html",
+        },
+        carpenter: {
+          name: "Carpentier Kitchen",
+          position: [-7.2846, 112.7381],
+          rating: 4.6,
+          address: "Jl. Untung Suropati, Surabaya Pusat",
+          detailUrl: "carpenter.html",
+        },
+        historica: {
+          name: "Historica Coffee",
+          position: [-7.2918, 112.7342],
+          rating: 4.8,
+          address: "Jl. Sumatera, Surabaya Pusat",
+          detailUrl: "historica.html",
+        },
+        simbiosis: {
+          name: "Simbiosis Coffee",
+          position: [-7.2899, 112.7218],
+          rating: 4.6,
+          address: "Jl. Raya Gubeng, Surabaya Timur",
+          detailUrl: "simbiosis.html",
+        },
+        kalyan: {
+          name: "Kopi Kalyan",
+          position: [-7.2954, 112.7394],
+          rating: 4.7,
+          address: "Jl. Tunjungan, Surabaya Pusat",
+          detailUrl: "kalyan.html",
+        },
+        noach: {
+          name: "Noach Cafe & Bistro",
+          position: [-7.2749, 112.7357],
+          rating: 4.5,
+          address: "Jl. Pregolan, Surabaya Barat",
+          detailUrl: "noach.html",
+        },
+        luminary: {
+          name: "Luminary Coffee",
+          position: [-7.2794, 112.7153],
+          rating: 4.6,
+          address: "Citraland, Surabaya Barat",
+          detailUrl: "luminary.html",
+        },
+        threelogy: {
+          name: "Threelogy Coffee",
+          position: [-7.2826, 112.7429],
+          rating: 4.5,
+          address: "Jl. Kayoon, Surabaya Pusat",
+          detailUrl: "threelogy.html",
+        },
+        kenangan: {
+          name: "Kopi Kenangan",
+          position: [-7.2921, 112.7399],
+          rating: 4.4,
+          address: "Tunjungan Plaza, Surabaya Pusat",
+          detailUrl: "kenangan.html",
+        },
+        common: {
+          name: "Common Grounds",
+          position: [-7.2608, 112.7436],
+          rating: 4.7,
+          address: "Pakuwon Mall, Surabaya Barat",
+          detailUrl: "common_ground.html",
+        },
+        soematra: {
+          name: "De Soematra 1910",
+          position: [-7.2915, 112.7351],
+          rating: 4.8,
+          address: "Jl. Sumatera, Surabaya Pusat",
+          detailUrl: "soematra.html",
+        },
+        nako: {
+          name: "Kopi Nako",
+          position: [-7.2703, 112.7211],
+          rating: 4.6,
+          address: "Surabaya Barat",
+          detailUrl: "nako.html",
+        },
+        jungledome: {
+          name: "Jungle Dome Cafe",
+          position: [-7.2734, 112.7019],
+          rating: 4.5,
+          address: "Citraland, Surabaya Barat",
+          detailUrl: "jungledome.html",
+        },
+        arabica: {
+          name: "% Arabica",
+          position: [-7.2584, 112.7428],
+          rating: 4.7,
+          address: "Pakuwon Mall, Surabaya Barat",
+          detailUrl: "arabica.html",
+        },
+        libreria: {
+          name: "Libreria Eatery",
+          position: [-7.2912, 112.7307],
+          rating: 4.6,
+          address: "Jl. Ngagel Jaya, Surabaya Timur",
+          detailUrl: "libreria.html",
+        },
+        delapangram: {
+          name: "Delapan Gram Coffee",
+          position: [-7.3001, 112.7265],
+          rating: 4.5,
+          address: "Jl. Manyar, Surabaya Timur",
+          detailUrl: "delapangram.html",
+        },
+        kopicantik: {
+          name: "Kopi Cantik",
+          position: [-7.2839, 112.7094],
+          rating: 4.4,
+          address: "Surabaya Barat",
+          detailUrl: "kopicantik.html",
+        },
+        kopisenja: {
+          name: "Kopi Senja",
+          position: [-7.2986, 112.7324],
+          rating: 4.5,
+          address: "Surabaya Selatan",
+          detailUrl: "kopisenja.html",
+        },
+        pavilion: {
+          name: "Pavilion Cafe",
+          position: [-7.2867, 112.7369],
+          rating: 4.6,
+          address: "Jl. Pemuda, Surabaya Pusat",
+          detailUrl: "pavilion.html",
+        },
+        kopitiam: {
+          name: "Kopi Tiam Oey",
+          position: [-7.2904, 112.7346],
+          rating: 4.6,
+          address: "Jl. Embong Malang, Surabaya Pusat",
+          detailUrl: "kopitiam.html",
+        },
+        excelso: {
+          name: "Excelso Coffee",
+          position: [-7.2667, 112.7425],
+          rating: 4.5,
+          address: "Tunjungan Plaza, Surabaya Pusat",
+          detailUrl: "excelso.html",
+        },
+        starbucks_tp: {
+          name: "Starbucks Tunjungan Plaza",
+          position: [-7.2659, 112.7429],
+          rating: 4.6,
+          address: "Tunjungan Plaza, Surabaya Pusat",
+          detailUrl: "starbucks_tp.html",
+        },
+        starbucks_pakuwon: {
+          name: "Starbucks Pakuwon Mall",
+          position: [-7.2594, 112.7438],
+          rating: 4.6,
+          address: "Pakuwon Mall, Surabaya Barat",
+          detailUrl: "starbucks_pakuwon.html",
+        },
+        djournal: {
+          name: "Djournal Coffee",
+          position: [-7.2662, 112.7431],
+          rating: 4.7,
+          address: "Tunjungan Plaza, Surabaya Pusat",
+          detailUrl: "djournal.html",
+        },
+        anemos: {
+          name: "Anemos Coffee",
+          position: [-7.2964, 112.7427],
+          rating: 4.6,
+          address: "Jl. Darmo Permai, Surabaya Barat",
+          detailUrl: "anemos.html",
+        },
+        satulima: {
+          name: "Satu Lima Coffee",
+          position: [-7.2831, 112.7234],
+          rating: 4.5,
+          address: "Jl. Manyar Kertoarjo, Surabaya Timur",
+          detailUrl: "satulima.html",
+        },
+        kalosi: {
+          name: "Kalosi Coffee",
+          position: [-7.2815, 112.7169],
+          rating: 4.6,
+          address: "Jl. Dharmahusada, Surabaya Timur",
+          detailUrl: "kalosi.html",
+        },
+        terace: {
+          name: "Terace Coffee",
+          position: [-7.2947, 112.7362],
+          rating: 4.6,
+          address: "Jl. Panglima Sudirman, Surabaya Pusat",
+          detailUrl: "terace.html",
+        },
+      };
 
-</main>
+      /* rating mengikuti daftar kafe */
+      function getRating(cafe) {
+        if (cafe.rating && !isNaN(cafe.rating)) return cafe.rating;
+        return 4.5;
+      }
 
-<footer class="mt-auto border-t border-primary/20 py-8 text-center text-sm text-text-muted-light dark:text-text-muted-dark">
-© 2025 SurabayaCafeFinder. Hak Cipta Dilindungi.
-</footer>
+      /* jam buka realistis */
+      function generateOpenHours(id) {
+        const jam = [
+          "Setiap Hari: 08.00 - 22.00 WIB",
+          "Setiap Hari: 09.00 - 23.00 WIB",
+          "Senin - Minggu: 10.00 - 22.00 WIB",
+        ];
+        return jam[id.length % jam.length];
+      }
 
-</div>
-</div>
-</div>
+      /* deskripsi otomatis variatif */
+      function autoDescription(name, address, id) {
+        const templates = [
+          name +
+            " menghadirkan suasana nyaman untuk Kamu yang ingin menikmati kopi. " +
+            "Lokasinya berada di " +
+            address +
+            ". Tempat ini cocok untuk bekerja, belajar, atau bersantai.",
 
-<script>
+          name +
+            " menjadi pilihan untuk Kamu yang mencari tempat ngopi dengan suasana tenang. " +
+            "Alamatnya di " +
+            address +
+            ". Banyak pengunjung datang untuk ngobrol santai atau mengerjakan tugas.",
 
+          name +
+            " menyajikan beragam menu kopi dan minuman. " +
+            "Berlokasi di " +
+            address +
+            ". Banyak yang datang untuk nongkrong bersama teman atau rehat sejenak.",
 
+          name +
+            " memiliki suasana yang nyaman untuk duduk lama. " +
+            "Tempatnya berada di " +
+            address +
+            ". Banyak pengunjung memanfaatkan tempat ini untuk bekerja atau membaca.",
 
-/* MENGGUNAKAN DATA ASLI DARI DAFTAR KAFE SEBAGAI FALLBACK */
-const cafes = {
-  "titik-koma": { name:"Titik Koma Coffee", position:[-7.3207,112.7668], rating:4.8, address:"Jl. Juwingan No.110, Surabaya Timur", detailUrl:"titik_koma.html" },
-  "kudos": { name:"Kudos Cafe", position:[-7.2885,112.6694], rating:4.6, address:"Pakuwon Square AK 2, Surabaya Barat", detailUrl:"kudos.html" },
-  "redback": { name:"Redback Specialty Coffee", position:[-7.2859,112.7199], rating:4.7, address:"Jl. Raya Darmo Permai III, Surabaya Barat", detailUrl:"redback.html" },
-  "kopi-janji": { name:"Kopi Janji Jiwa", position:[-7.2756,112.7421], rating:4.5, address:"Jl. Basuki Rahmat, Surabaya Pusat", detailUrl:"kopi_janji.html" },
-  "tuku": { name:"Tuku Coffee", position:[-7.2893,112.7349], rating:4.7, address:"Jl. Raya Darmo, Surabaya Selatan", detailUrl:"tuku.html" },
-  "carpenter": { name:"Carpentier Kitchen", position:[-7.2846,112.7381], rating:4.6, address:"Jl. Untung Suropati, Surabaya Pusat", detailUrl:"carpenter.html" },
-  "historica": { name:"Historica Coffee", position:[-7.2918,112.7342], rating:4.8, address:"Jl. Sumatera, Surabaya Pusat", detailUrl:"historica.html" },
-  "simbiosis": { name:"Simbiosis Coffee", position:[-7.2899,112.7218], rating:4.6, address:"Jl. Raya Gubeng, Surabaya Timur", detailUrl:"simbiosis.html" },
-  "kalyan": { name:"Kopi Kalyan", position:[-7.2954,112.7394], rating:4.7, address:"Jl. Tunjungan, Surabaya Pusat", detailUrl:"kalyan.html" },
-  "noach": { name:"Noach Cafe & Bistro", position:[-7.2749,112.7357], rating:4.5, address:"Jl. Pregolan, Surabaya Barat", detailUrl:"noach.html" },
-  "luminary": { name:"Luminary Coffee", position:[-7.2794,112.7153], rating:4.6, address:"Citraland, Surabaya Barat", detailUrl:"luminary.html" },
-  "threelogy": { name:"Threelogy Coffee", position:[-7.2826,112.7429], rating:4.5, address:"Jl. Kayoon, Surabaya Pusat", detailUrl:"threelogy.html" },
-  "kenangan": { name:"Kopi Kenangan", position:[-7.2921,112.7399], rating:4.4, address:"Tunjungan Plaza, Surabaya Pusat", detailUrl:"kenangan.html" },
-  "common": { name:"Common Grounds", position:[-7.2608,112.7436], rating:4.7, address:"Pakuwon Mall, Surabaya Barat", detailUrl:"common_ground.html" },
-  "soematra": { name:"De Soematra 1910", position:[-7.2915,112.7351], rating:4.8, address:"Jl. Sumatera, Surabaya Pusat", detailUrl:"soematra.html" },
-  "nako": { name:"Kopi Nako", position:[-7.2703,112.7211], rating:4.6, address:"Surabaya Barat", detailUrl:"nako.html" },
-  "jungledome": { name:"Jungle Dome Cafe", position:[-7.2734,112.7019], rating:4.5, address:"Citraland, Surabaya Barat", detailUrl:"jungledome.html" },
-  "arabica": { name:"% Arabica", position:[-7.2584,112.7428], rating:4.7, address:"Pakuwon Mall, Surabaya Barat", detailUrl:"arabica.html" },
-  "libreria": { name:"Libreria Eatery", position:[-7.2912,112.7307], rating:4.6, address:"Jl. Ngagel Jaya, Surabaya Timur", detailUrl:"libreria.html" },
-  "delapangram": { name:"Delapan Gram Coffee", position:[-7.3001,112.7265], rating:4.5, address:"Jl. Manyar, Surabaya Timur", detailUrl:"delapangram.html" },
-  "kopicantik": { name:"Kopi Cantik", position:[-7.2839,112.7094], rating:4.4, address:"Surabaya Barat", detailUrl:"kopicantik.html" },
-  "kopisenja": { name:"Kopi Senja", position:[-7.2986,112.7324], rating:4.5, address:"Surabaya Selatan", detailUrl:"kopisenja.html" },
-  "pavilion": { name:"Pavilion Cafe", position:[-7.2867,112.7369], rating:4.6, address:"Jl. Pemuda, Surabaya Pusat", detailUrl:"pavilion.html" },
-  "kopitiam": { name:"Kopi Tiam Oey", position:[-7.2904,112.7346], rating:4.6, address:"Jl. Embong Malang, Surabaya Pusat", detailUrl:"kopitiam.html" },
-  "excelso": { name:"Excelso Coffee", position:[-7.2667,112.7425], rating:4.5, address:"Tunjungan Plaza, Surabaya Pusat", detailUrl:"excelso.html" },
-  "starbucks_tp": { name:"Starbucks Tunjungan Plaza", position:[-7.2659,112.7429], rating:4.6, address:"Tunjungan Plaza, Surabaya Pusat", detailUrl:"starbucks_tp.html" },
-  "starbucks_pakuwon": { name:"Starbucks Pakuwon Mall", position:[-7.2594,112.7438], rating:4.6, address:"Pakuwon Mall, Surabaya Barat", detailUrl:"starbucks_pakuwon.html" },
-  "djournal": { name:"Djournal Coffee", position:[-7.2662,112.7431], rating:4.7, address:"Tunjungan Plaza, Surabaya Pusat", detailUrl:"djournal.html" },
-  "anemos": { name:"Anemos Coffee", position:[-7.2964,112.7427], rating:4.6, address:"Jl. Darmo Permai, Surabaya Barat", detailUrl:"anemos.html" },
-  "satulima": { name:"Satu Lima Coffee", position:[-7.2831,112.7234], rating:4.5, address:"Jl. Manyar Kertoarjo, Surabaya Timur", detailUrl:"satulima.html" },
-  "kalosi": { name:"Kalosi Coffee", position:[-7.2815,112.7169], rating:4.6, address:"Jl. Dharmahusada, Surabaya Timur", detailUrl:"kalosi.html" },
-  "terace": { name:"Terace Coffee", position:[-7.2947,112.7362], rating:4.6, address:"Jl. Panglima Sudirman, Surabaya Pusat", detailUrl:"terace.html" },
-};
+          name +
+            " cocok untuk Kamu yang suka ngopi sambil menikmati suasana santai. " +
+            "Alamatnya " +
+            address +
+            ". Pengunjung sering memanfaatkan meja-meja yang luas untuk aktivitas produktif.",
 
-/* rating mengikuti daftar kafe */
-function getRating(cafe) {
-  if (cafe.rating && !isNaN(cafe.rating)) return cafe.rating;
-  return 4.5;
-}
+          name +
+            " menawarkan suasana hangat khas kafe. " +
+            "Berlokasi di " +
+            address +
+            ". Banyak pengunjung datang untuk sekadar menikmati secangkir kopi atau berdiskusi.",
 
-/* jam buka realistis */
-function generateOpenHours(id) {
-  const jam = [
-    "Setiap Hari: 08.00 - 22.00 WIB",
-    "Setiap Hari: 09.00 - 23.00 WIB",
-    "Senin - Minggu: 10.00 - 22.00 WIB"
-  ];
-  return jam[(id.length % jam.length)];
-}
+          name +
+            " menjadi tempat persinggahan favorit bagi pecinta kopi. " +
+            "Tempat ini berada di " +
+            address +
+            ". Lingkungannya mendukung untuk bekerja atau bertemu teman.",
 
-/* deskripsi otomatis variatif */
-function autoDescription(name, address, id) {
+          name +
+            " menghadirkan area duduk yang nyaman. " +
+            "Berlokasi di " +
+            address +
+            ". Banyak pengunjung merasa betah berlama-lama di sini.",
+        ];
 
-  const templates = [
+        const index = id.length % templates.length;
+        return templates[index];
+      }
 
-    name + " menghadirkan suasana nyaman untuk Kamu yang ingin menikmati kopi. " +
-    "Lokasinya berada di " + address + ". Tempat ini cocok untuk bekerja, belajar, atau bersantai.",
+      /* ulasan ringan */
+      function autoReviews() {
+        return [
+          "Tempatnya nyaman. Kopinya enak.",
+          "Cocok buat nugas. Wifi lancar.",
+          "Suasana tenang dan bersih.",
+        ];
+      }
 
-    name + " menjadi pilihan untuk Kamu yang mencari tempat ngopi dengan suasana tenang. " +
-    "Alamatnya di " + address + ". Banyak pengunjung datang untuk ngobrol santai atau mengerjakan tugas.",
+      /* GALERI TEMA KAFE & KOPI (RINGAN) */
+      const cafeGallery = [
+        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=60&auto=format",
+        "https://images.unsplash.com/photo-1459755486867-b55449bb39ff?w=700&q=60&auto=format",
+        "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=60&auto=format",
+        "https://images.unsplash.com/photo-1517701550927-30cf4ba1d303?w=700&q=60&auto=format",
+        "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=700&q=60&auto=format",
+        "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=700&q=60&auto=format",
+        "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=700&q=60&auto=format",
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=60&auto=format",
+      ];
 
-    name + " menyajikan beragam menu kopi dan minuman. " +
-    "Berlokasi di " + address + ". Banyak yang datang untuk nongkrong bersama teman atau rehat sejenak.",
+      /* RANDOM KONSISTEN PER KAFE */
+      function seededIndex(str) {
+        let h = 0;
+        for (let i = 0; i < str.length; i++) {
+          h = (h * 31 + str.charCodeAt(i)) % 997;
+        }
+        return h;
+      }
 
-    name + " memiliki suasana yang nyaman untuk duduk lama. " +
-    "Tempatnya berada di " + address + ". Banyak pengunjung memanfaatkan tempat ini untuk bekerja atau membaca.",
+      /* tiap kafe dapat kombinasi gambar berbeda */
+      function galleryImageByCafe(id, order) {
+        const base = seededIndex(id);
+        const idx = (base + order) % cafeGallery.length;
+        return cafeGallery[idx];
+      }
 
-    name + " cocok untuk Kamu yang suka ngopi sambil menikmati suasana santai. " +
-    "Alamatnya " + address + ". Pengunjung sering memanfaatkan meja-meja yang luas untuk aktivitas produktif.",
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
 
-    name + " menawarkan suasana hangat khas kafe. " +
-    "Berlokasi di " + address + ". Banyak pengunjung datang untuk sekadar menikmati secangkir kopi atau berdiskusi.",
+      /* ambil data langsung dari daftar kafe */
+      const cafe = cafes[id];
 
-    name + " menjadi tempat persinggahan favorit bagi pecinta kopi. " +
-    "Tempat ini berada di " + address + ". Lingkungannya mendukung untuk bekerja atau bertemu teman.",
+      /* aman kalau ada id baru */
+      if (!cafe) {
+        document.getElementById("detailContainer").innerHTML =
+          "<p>Data kafe tidak ditemukan.</p>";
+      } else {
+        const rating = getRating(cafe);
+        const reviews = autoReviews();
+        const openHours = generateOpenHours(id);
 
-    name + " menghadirkan area duduk yang nyaman. " +
-    "Berlokasi di " + address + ". Banyak pengunjung merasa betah berlama-lama di sini."
-  ];
+        const lat = cafe.position[0];
+        const lng = cafe.position[1];
+        const mapsUrl = "https://www.google.com/maps?q=" + lat + "," + lng;
 
-  const index = id.length % templates.length;
-  return templates[index];
-}
+        document.title = "Detail Kafe - " + cafe.name + " | SurabayaCafeFinder";
 
-/* ulasan ringan */
-function autoReviews() {
-  return [
-    "Tempatnya nyaman. Kopinya enak.",
-    "Cocok buat nugas. Wifi lancar.",
-    "Suasana tenang dan bersih."
-  ];
-}
-
-/* GALERI TEMA KAFE & KOPI (RINGAN) */
-const cafeGallery = [
-  "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=60&auto=format",
-  "https://images.unsplash.com/photo-1459755486867-b55449bb39ff?w=700&q=60&auto=format",
-  "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=60&auto=format",
-  "https://images.unsplash.com/photo-1517701550927-30cf4ba1d303?w=700&q=60&auto=format",
-  "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=700&q=60&auto=format",
-  "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=700&q=60&auto=format",
-  "https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=700&q=60&auto=format",
-  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=60&auto=format"
-];
-
-/* RANDOM KONSISTEN PER KAFE */
-function seededIndex(str) {
-  let h = 0;
-  for (let i = 0; i < str.length; i++) {
-    h = (h * 31 + str.charCodeAt(i)) % 997;
-  }
-  return h;
-}
-
-/* tiap kafe dapat kombinasi gambar berbeda */
-function galleryImageByCafe(id, order) {
-  const base = seededIndex(id);
-  const idx = (base + order) % cafeGallery.length;
-  return cafeGallery[idx];
-}
-
-const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
-
-/* ambil data langsung dari daftar kafe */
-const cafe = cafes[id];
-
-/* aman kalau ada id baru */
-if (!cafe) {
-  document.getElementById("detailContainer").innerHTML =
-    "<p>Data kafe tidak ditemukan.</p>";
-} else {
-
-  const rating = getRating(cafe);
-  const reviews = autoReviews();
-  const openHours = generateOpenHours(id);
-
-  const lat = cafe.position[0];
-  const lng = cafe.position[1];
-  const mapsUrl = "https://www.google.com/maps?q=" + lat + "," + lng;
-
-  document.title = "Detail Kafe - " + cafe.name + " | SurabayaCafeFinder";
-
-  document.getElementById("detailContainer").innerHTML = `
+        document.getElementById("detailContainer").innerHTML = `
 
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
@@ -249,19 +494,31 @@ if (!cafe) {
     <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
 
       <div class="col-span-2 row-span-2 rounded-lg overflow-hidden">
-        <img class="w-full h-full object-cover" src="${galleryImageByCafe(id,0)}" loading="lazy">
+        <img class="w-full h-full object-cover" src="${galleryImageByCafe(
+          id,
+          0
+        )}" loading="lazy">
       </div>
 
       <div class="rounded-lg overflow-hidden">
-        <img class="w-full h-full object-cover aspect-square" src="${galleryImageByCafe(id,1)}" loading="lazy">
+        <img class="w-full h-full object-cover aspect-square" src="${galleryImageByCafe(
+          id,
+          1
+        )}" loading="lazy">
       </div>
 
       <div class="rounded-lg overflow-hidden">
-        <img class="w-full h-full object-cover aspect-square" src="${galleryImageByCafe(id,2)}" loading="lazy">
+        <img class="w-full h-full object-cover aspect-square" src="${galleryImageByCafe(
+          id,
+          2
+        )}" loading="lazy">
       </div>
 
       <div class="rounded-lg overflow-hidden">
-        <img class="w-full h-full object-cover aspect-square" src="${galleryImageByCafe(id,3)}" loading="lazy">
+        <img class="w-full h-full object-cover aspect-square" src="${galleryImageByCafe(
+          id,
+          3
+        )}" loading="lazy">
       </div>
 
     </div>
@@ -302,7 +559,9 @@ if (!cafe) {
         <h2 class="text-2xl font-bold">Ulasan Pengguna</h2>
 
         <div class="mt-4 space-y-6">
-          ${reviews.map(r=>`
+          ${reviews
+            .map(
+              (r) => `
             <div class="border-b border-primary/10 pb-4">
               <div class="flex items-center gap-1">
                 <span class="material-symbols-outlined fill text-secondary text-base">star</span>
@@ -313,16 +572,15 @@ if (!cafe) {
               </div>
               <p class="text-sm text-text-muted-light mt-1">${r}</p>
             </div>
-          `).join("")}
+          `
+            )
+            .join("")}
         </div>
       </div>
 
     </div>
   `;
-}
-
-</script>
-
-
-</body>
+      }
+    </script>
+  </body>
 </html>

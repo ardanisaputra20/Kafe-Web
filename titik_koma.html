@@ -1,173 +1,343 @@
 <!DOCTYPE html>
-<html class="light" lang="id"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Detail Kafe - Titik Koma Coffee | SurabayaCafeFinder</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200" rel="stylesheet"/>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .material-symbols-outlined.fill {
-            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Detail Kafe - Titik Koma Coffee | SurabayaCafeFinder</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200"
+      rel="stylesheet"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .material-symbols-outlined.fill {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
     </style>
-<script>
+    <script>
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             colors: {
-              "primary": "#A16207",
+              primary: "#A16207",
               "background-light": "#FEFCE8",
               "background-dark": "#1F2937",
-              "secondary": "#FDE68A",
+              secondary: "#FDE68A",
               "text-light": "#1F2937",
               "text-dark": "#FEFCE8",
               "text-muted-light": "#6b7280",
-              "text-muted-dark": "#d1d5db"
+              "text-muted-dark": "#d1d5db",
             },
             fontFamily: {
-              "display": ["Plus Jakarta Sans", "sans-serif"]
+              display: ["Plus Jakarta Sans", "sans-serif"],
             },
-            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
           },
         },
-      }
+      };
     </script>
-</head>
-<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
-<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
-<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 sm:px-10 py-4">
-<div class="flex items-center gap-3 text-text-light dark:text-text-dark">
-<div class="size-6 text-primary">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-xl font-bold leading-tight tracking-tighter">SurabayaCafeFinder</h2>
-</div>
-<nav class="hidden md:flex flex-1 justify-end">
-<div class="flex items-center gap-9">
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="home_page.html">Beranda</a>
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="daftar_kafe.html">Daftar Kafe</a>
-<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="about_page.html">Tentang Kami</a>
-
-</div>
-</nav>
-</header>
-<main class="flex-grow py-10 px-4 sm:px-6 md:px-8">
-<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-<div>
-<h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Titik Koma Coffee</h1>
-<div class="flex items-center gap-2 mt-2">
-<span class="material-symbols-outlined fill text-secondary">star</span>
-<span class="font-bold text-lg">4.8</span>
-<span class="text-sm text-text-muted-light dark:text-text-muted-dark">(2.1k ulasan)</span>
-</div>
-</div>
-<a
-  href="https://www.google.com/maps/search/?api=1&query=Jl.+Juwingan+No.110,+Kertajaya,+Surabaya"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="w-full md:w-auto flex items-center justify-center gap-2 min-w-[84px] cursor-pointer overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-sm hover:opacity-90 transition-opacity"
->
-  <span class="material-symbols-outlined">map</span>
-  Lihat di Google Maps
-</a>
-
-</div>
-<div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
-<div class="col-span-2 row-span-2 rounded-lg overflow-hidden">
-<img alt="Titik Koma Coffee interior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfgwm3HcYKAfH75GIY6lxnvi_AiXKfz6p-8EdmbAsFwkjGY-9O8D9oqX8uvcEU9Od3ibkD8EkVJxjyLnDEpxxZt5Tdvx3rtY8xyHqvyQQBp11GN9rQ7TgtqVMjJ60H26CwTtq_EZgb6gxJ2kFM8QttKNmsGNQQaMgDDQaLToSHSSN05pPI1rC3kHU5TNtm5JXtN52UACe_kZj392huDLzeJFLSqs3XbYS_99F8ZFVwE-nzs6svRdSca-cJlbD-g8LyzWvB8KbDy3E"/>
-</div>
-<div class="rounded-lg overflow-hidden">
-<img alt="Close up of coffee" class="w-full h-full object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB40ZgW09MKIUsKqTuM5Y6rbeP788NQDcaQ0Y9-Hq3k3OtkZtUoTSO_WssUmunPxT1kmzwEHzrKgtH7Pfhx6zbbse3GxkUKxoi0jXUS5eVIVazu-FR7AlMyNbep0Rsvxn2T5nZibi1Uwti2ubPdj-mMwZlC1JCORI7T4le9b4GC9ivsZF4Ba2HNGp7IcnV3KzxlbifFQS5uYaeuRrYjrAW7WYYNxNdT4gloFD0uUEHsBmi6cVNDn2-gv8LqvgsznkWj4RLf71VOO_w"/>
-</div>
-<div class="rounded-lg overflow-hidden">
-<img alt="Seating area" class="w-full h-full object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7OKClZ-qDXSbLJs2z8vR43l-xGRlPbZ_-EyEOq4vUnVatcAhv7Gk2c8oL4yL-1ysbAkhgJU7t4Oba2E9h8LiQ4gJV0RpVHt38TpucRBsqjP14CYYLXklDdcY8_GqbhOYnKRmoH6a1-1WvWhALZEgAnxbdURXgiW8vQJu_epbzuu6fkzH4NF1wrJP9mdeoi4vMShNTN47FQ7CnbIyD8naHQX9nC_c__if0rQKXJIopPIfPGlXBKmzZD0iNfoxYHMlLV0KsvN2Ss-Q"/>
-</div>
-<div class="rounded-lg overflow-hidden">
-<img alt="Exterior view" class="w-full h-full object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZIbQ_h_Hj-OcNYOiizbfncH6t_Nd87rgwlF1_o8PXcB5Wz5VmlfRfRDKamtaHIiawYigQbFXB85DyW1IcS8or7EdmU6117AdOJbNLS2BsAQ5TNSS6nVEDuA4IOOeUqtAb7VXk34-35gj0Rfx3iYBuFqhyep-JrduouQsy4QCPZrMcQgaPM5H-h-QIE-U1DbAKaR0QevoofR5aOoD_P5U6g8CcOrjEGNg1Lg9LVg9i9Ff5sitllxafhp6VtTMTo523RiQZS6jruCg"/>
-</div>
-<div class="rounded-lg overflow-hidden">
-<img alt="Coffee art" class="w-full h-full object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHB0ZNTxweK1XV9yBQxcVz6jgRXivbdob_21YRldtsAMqGh-ERsBMHzTj9-hGIx9D0sebd3dBBCMas_TVIr0EJjj00SBprfDrCTdde08QcfwxeZWHZPom7acXGG8DbvGphunMxIILlK-uJban-cTnX3wvcGKF02CqTHaWp5hrOa6qsGQhY-NoRCk2MYQLHYpQnZVBNP2kndEDeBGJJiKKKJfgoQaTuR_eqOnV5ifCqDQfUeUHUsOKHkGwZVZJ4LcQxT8jxJTWrOpg"/>
-</div>
-</div>
-<div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-<div class="md:col-span-2">
-<h2 class="text-2xl font-bold tracking-tight">Tentang Kafe</h2>
-<p class="mt-4 text-text-muted-light dark:text-text-muted-dark leading-relaxed">Titik Koma Coffee adalah sebuah kedai kopi yang menawarkan suasana nyaman dan tenang, cocok untuk bekerja, belajar, atau sekadar bersantai. Dengan desain interior yang minimalis dan modern, tempat ini menjadi favorit di kalangan anak muda dan para profesional di Surabaya Timur. Kami menyajikan berbagai pilihan kopi berkualitas, dari espresso based hingga manual brew, serta aneka camilan lezat untuk menemani harimu.</p>
-<div class="mt-8 space-y-5">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1">location_on</span>
-<div>
-<h3 class="font-bold text-lg">Alamat</h3>
-<p class="text-text-muted-light dark:text-text-muted-dark">Jl. Juwingan No.110, Kertajaya, Kec. Gubeng, Surabaya, Jawa Timur 60282</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-primary mt-1">schedule</span>
-<div>
-<h3 class="font-bold text-lg">Jam Buka</h3>
-<p class="text-text-muted-light dark:text-text-muted-dark">Setiap Hari: 08:00 - 22:00 WIB</p>
-</div>
-</div>
-</div>
-</div>
-<div class="md:col-span-1">
-<h2 class="text-2xl font-bold tracking-tight">Ulasan Pengguna</h2>
-<div class="mt-4 space-y-6">
-<div class="flex flex-col gap-2 border-b border-primary/10 pb-4">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-normal">"Tempatnya cozy banget buat nugas, wifinya kenceng dan colokan banyak. Kopinya juga mantap!"</p>
-<p class="text-sm font-bold">- Amelia S.</p>
-</div>
-<div class="flex flex-col gap-2 border-b border-primary/10 pb-4">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined text-secondary text-base">star</span>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-normal">"Salah satu coffee shop terbaik di Surabaya Timur. Baristanya ramah dan informatif."</p>
-<p class="text-sm font-bold">- Budi P.</p>
-</div>
-<div class="flex flex-col gap-2">
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-<span class="material-symbols-outlined fill text-secondary text-base">star</span>
-</div>
-<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-normal">"Suka sama suasananya, gak terlalu berisik. Pas buat me-time sambil baca buku."</p>
-<p class="text-sm font-bold">- Citra D.</p>
-</div>
-</div>
-</div>
-</div>
-</main>
-<footer class="mt-auto border-t border-primary/20 py-8 text-center text-sm text-text-muted-light dark:text-text-muted-dark">
-                    © 2025 SurabayaCafeFinder. Hak Cipta Dilindungi.
-                </footer>
-</div>
-</div>
-</div>
-</div>
-
-</body></html>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark"
+  >
+    <div
+      class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <div
+          class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5"
+        >
+          <div
+            class="layout-content-container flex flex-col w-full max-w-[960px] flex-1"
+          >
+            <header
+              class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 sm:px-10 py-4"
+            >
+              <div
+                class="flex items-center gap-3 text-text-light dark:text-text-dark"
+              >
+                <div class="size-6 text-primary">
+                  <svg
+                    fill="none"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-xl font-bold leading-tight tracking-tighter">
+                  SurabayaCafeFinder
+                </h2>
+              </div>
+              <nav class="hidden md:flex flex-1 justify-end">
+                <div class="flex items-center gap-9">
+                  <a
+                    class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="index.html"
+                    >Beranda</a
+                  >
+                  <a
+                    class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="daftar_kafe.html"
+                    >Daftar Kafe</a
+                  >
+                  <a
+                    class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                    href="about_page.html"
+                    >Tentang Kami</a
+                  >
+                </div>
+              </nav>
+            </header>
+            <main class="flex-grow py-10 px-4 sm:px-6 md:px-8">
+              <div
+                class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+              >
+                <div>
+                  <h1
+                    class="text-3xl sm:text-4xl font-extrabold tracking-tight"
+                  >
+                    Titik Koma Coffee
+                  </h1>
+                  <div class="flex items-center gap-2 mt-2">
+                    <span class="material-symbols-outlined fill text-secondary"
+                      >star</span
+                    >
+                    <span class="font-bold text-lg">4.8</span>
+                    <span
+                      class="text-sm text-text-muted-light dark:text-text-muted-dark"
+                      >(2.1k ulasan)</span
+                    >
+                  </div>
+                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Jl.+Juwingan+No.110,+Kertajaya,+Surabaya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full md:w-auto flex items-center justify-center gap-2 min-w-[84px] cursor-pointer overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-sm hover:opacity-90 transition-opacity"
+                >
+                  <span class="material-symbols-outlined">map</span>
+                  Lihat di Google Maps
+                </a>
+              </div>
+              <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
+                <div class="col-span-2 row-span-2 rounded-lg overflow-hidden">
+                  <img
+                    alt="Titik Koma Coffee interior"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfgwm3HcYKAfH75GIY6lxnvi_AiXKfz6p-8EdmbAsFwkjGY-9O8D9oqX8uvcEU9Od3ibkD8EkVJxjyLnDEpxxZt5Tdvx3rtY8xyHqvyQQBp11GN9rQ7TgtqVMjJ60H26CwTtq_EZgb6gxJ2kFM8QttKNmsGNQQaMgDDQaLToSHSSN05pPI1rC3kHU5TNtm5JXtN52UACe_kZj392huDLzeJFLSqs3XbYS_99F8ZFVwE-nzs6svRdSca-cJlbD-g8LyzWvB8KbDy3E"
+                  />
+                </div>
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    alt="Close up of coffee"
+                    class="w-full h-full object-cover aspect-square"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB40ZgW09MKIUsKqTuM5Y6rbeP788NQDcaQ0Y9-Hq3k3OtkZtUoTSO_WssUmunPxT1kmzwEHzrKgtH7Pfhx6zbbse3GxkUKxoi0jXUS5eVIVazu-FR7AlMyNbep0Rsvxn2T5nZibi1Uwti2ubPdj-mMwZlC1JCORI7T4le9b4GC9ivsZF4Ba2HNGp7IcnV3KzxlbifFQS5uYaeuRrYjrAW7WYYNxNdT4gloFD0uUEHsBmi6cVNDn2-gv8LqvgsznkWj4RLf71VOO_w"
+                  />
+                </div>
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    alt="Seating area"
+                    class="w-full h-full object-cover aspect-square"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7OKClZ-qDXSbLJs2z8vR43l-xGRlPbZ_-EyEOq4vUnVatcAhv7Gk2c8oL4yL-1ysbAkhgJU7t4Oba2E9h8LiQ4gJV0RpVHt38TpucRBsqjP14CYYLXklDdcY8_GqbhOYnKRmoH6a1-1WvWhALZEgAnxbdURXgiW8vQJu_epbzuu6fkzH4NF1wrJP9mdeoi4vMShNTN47FQ7CnbIyD8naHQX9nC_c__if0rQKXJIopPIfPGlXBKmzZD0iNfoxYHMlLV0KsvN2Ss-Q"
+                  />
+                </div>
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    alt="Exterior view"
+                    class="w-full h-full object-cover aspect-square"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZIbQ_h_Hj-OcNYOiizbfncH6t_Nd87rgwlF1_o8PXcB5Wz5VmlfRfRDKamtaHIiawYigQbFXB85DyW1IcS8or7EdmU6117AdOJbNLS2BsAQ5TNSS6nVEDuA4IOOeUqtAb7VXk34-35gj0Rfx3iYBuFqhyep-JrduouQsy4QCPZrMcQgaPM5H-h-QIE-U1DbAKaR0QevoofR5aOoD_P5U6g8CcOrjEGNg1Lg9LVg9i9Ff5sitllxafhp6VtTMTo523RiQZS6jruCg"
+                  />
+                </div>
+                <div class="rounded-lg overflow-hidden">
+                  <img
+                    alt="Coffee art"
+                    class="w-full h-full object-cover aspect-square"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHB0ZNTxweK1XV9yBQxcVz6jgRXivbdob_21YRldtsAMqGh-ERsBMHzTj9-hGIx9D0sebd3dBBCMas_TVIr0EJjj00SBprfDrCTdde08QcfwxeZWHZPom7acXGG8DbvGphunMxIILlK-uJban-cTnX3wvcGKF02CqTHaWp5hrOa6qsGQhY-NoRCk2MYQLHYpQnZVBNP2kndEDeBGJJiKKKJfgoQaTuR_eqOnV5ifCqDQfUeUHUsOKHkGwZVZJ4LcQxT8jxJTWrOpg"
+                  />
+                </div>
+              </div>
+              <div
+                class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
+              >
+                <div class="md:col-span-2">
+                  <h2 class="text-2xl font-bold tracking-tight">
+                    Tentang Kafe
+                  </h2>
+                  <p
+                    class="mt-4 text-text-muted-light dark:text-text-muted-dark leading-relaxed"
+                  >
+                    Titik Koma Coffee adalah sebuah kedai kopi yang menawarkan
+                    suasana nyaman dan tenang, cocok untuk bekerja, belajar,
+                    atau sekadar bersantai. Dengan desain interior yang
+                    minimalis dan modern, tempat ini menjadi favorit di kalangan
+                    anak muda dan para profesional di Surabaya Timur. Kami
+                    menyajikan berbagai pilihan kopi berkualitas, dari espresso
+                    based hingga manual brew, serta aneka camilan lezat untuk
+                    menemani harimu.
+                  </p>
+                  <div class="mt-8 space-y-5">
+                    <div class="flex items-start gap-4">
+                      <span class="material-symbols-outlined text-primary mt-1"
+                        >location_on</span
+                      >
+                      <div>
+                        <h3 class="font-bold text-lg">Alamat</h3>
+                        <p
+                          class="text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          Jl. Juwingan No.110, Kertajaya, Kec. Gubeng, Surabaya,
+                          Jawa Timur 60282
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                      <span class="material-symbols-outlined text-primary mt-1"
+                        >schedule</span
+                      >
+                      <div>
+                        <h3 class="font-bold text-lg">Jam Buka</h3>
+                        <p
+                          class="text-text-muted-light dark:text-text-muted-dark"
+                        >
+                          Setiap Hari: 08:00 - 22:00 WIB
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:col-span-1">
+                  <h2 class="text-2xl font-bold tracking-tight">
+                    Ulasan Pengguna
+                  </h2>
+                  <div class="mt-4 space-y-6">
+                    <div
+                      class="flex flex-col gap-2 border-b border-primary/10 pb-4"
+                    >
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                      </div>
+                      <p
+                        class="text-sm text-text-muted-light dark:text-text-muted-dark leading-normal"
+                      >
+                        "Tempatnya cozy banget buat nugas, wifinya kenceng dan
+                        colokan banyak. Kopinya juga mantap!"
+                      </p>
+                      <p class="text-sm font-bold">- Amelia S.</p>
+                    </div>
+                    <div
+                      class="flex flex-col gap-2 border-b border-primary/10 pb-4"
+                    >
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined text-secondary text-base"
+                          >star</span
+                        >
+                      </div>
+                      <p
+                        class="text-sm text-text-muted-light dark:text-text-muted-dark leading-normal"
+                      >
+                        "Salah satu coffee shop terbaik di Surabaya Timur.
+                        Baristanya ramah dan informatif."
+                      </p>
+                      <p class="text-sm font-bold">- Budi P.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <div class="flex items-center gap-1">
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                        <span
+                          class="material-symbols-outlined fill text-secondary text-base"
+                          >star</span
+                        >
+                      </div>
+                      <p
+                        class="text-sm text-text-muted-light dark:text-text-muted-dark leading-normal"
+                      >
+                        "Suka sama suasananya, gak terlalu berisik. Pas buat
+                        me-time sambil baca buku."
+                      </p>
+                      <p class="text-sm font-bold">- Citra D.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+            <footer
+              class="mt-auto border-t border-primary/20 py-8 text-center text-sm text-text-muted-light dark:text-text-muted-dark"
+            >
+              © 2025 SurabayaCafeFinder. Hak Cipta Dilindungi.
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
