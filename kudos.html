@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kudos Cafe - SurabayaCafeFinder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#A16207",
+                        "background-light": "#FEFCE8",
+                        "background-dark": "#1F2937",
+                        "secondary": "#FDE68A",
+                        "text-light": "#1F2937",
+                        "text-dark": "#FEFCE8",
+                        "text-muted-light": "#6b7280",
+                        "text-muted-dark": "#d1d5db"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-5xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 sm:px-10 py-4">
+<div class="flex items-center gap-3 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tighter">SurabayaCafeFinder</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-end">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="home_page.html">Beranda</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="daftar_kafe.html">Daftar Kafe</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="about_page.html">Tentang Kami</a>
+
+</div>
+</nav>
+</header>
+<main class="flex-grow py-12 md:py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<div class="flex flex-col gap-6">
+<div>
+<h1 class="text-4xl sm:text-5xl font-extrabold tracking-tighter text-text-light dark:text-text-dark">Kudos Cafe</h1>
+<div class="flex items-center gap-2 mt-3">
+<span class="material-symbols-outlined fill text-secondary text-2xl">star</span>
+<span class="font-bold text-lg text-text-light dark:text-text-dark">4.6</span>
+<span class="text-base text-text-muted-light dark:text-text-muted-dark">(1.8k ulasan)</span>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-bold">Deskripsi</h2>
+<p class="mt-2 text-text-muted-light dark:text-text-muted-dark leading-relaxed">Kudos Cafe adalah tempat nongkrong modern dan nyaman di Surabaya Barat. Dikenal dengan kopi spesialti berkualitas tinggi dan suasana yang homey, tempat ini cocok untuk bekerja, bertemu teman, atau sekadar bersantai.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h3 class="font-bold">Alamat</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark">Pakuwon Square AK 2 No. 3, Jl. Mayjend. Jonosewojo, Babatan, Wiyung, Surabaya, Jawa Timur 60227</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1">schedule</span>
+<div>
+<h3 class="font-bold">Jam Buka</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark">Setiap Hari: 08:00 - 22:00 WIB</p>
+</div>
+</div>
+</div>
+<a
+  href="https://www.google.com/maps/search/?api=1&query=Kudos+Cafe+Pakuwon+Square+AK+2,+Wiyung,+Surabaya"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="mt-4 w-full md:w-auto inline-flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-sm hover:opacity-90 transition-opacity"
+>
+  <span class="material-symbols-outlined">map</span>
+  <span>Lihat di Google Maps</span>
+</a>
+
+</a>
+</div>
+<div class="grid grid-cols-2 grid-rows-2 gap-4 h-96">
+<div class="col-span-2 row-span-2 rounded-lg bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfgwm3HcYKAfH75GIY6lxnvi_AiXKfz6p-8EdmbAsFwkjGY-9O8D9oqX8uvcEU9Od3ibkD8EkVJxjyLnDEpxxZt5Tdvx3rtY8xyHqvyQQBp11GN9rQ7TgtqVMjJ60H26CwTtq_EZgb6gxJ2kFM8QttKNmsGNQQaMgDDQaLToSHSSN05pPI1rC3kHU5TNtm5JXtN52UACe_kZj392huDLzeJFLSqs3XbYS_99F8ZFVwE-nzs6svRdSca-cJlbD-g8LyzWvB8KbDy3E");'></div>
+<div class="rounded-lg bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTmyEAYmzpJ6rxzUZY-NfXiHgj8LZG3RhA8GwfdqDG9XIrJEjtpmLbmAESaciS9HrAihVTlPDQVIF-0TQEpGRTALaf4sjMoQ1owgTG6_7uT85BKXR1PxItc8qmqyuevakHzRPTpwSGHo9ASr7sjtvsrhu3rKgtsuD0yv9AYfcGZwI_zHfwGkw9e3yMdRaQ7YyZ7HNBte6TVmF5Csi2jFzUUGAs5rpcswR2oXjhz2CHQHk1_lS2Mt6U24WPK06RQA7rTtw3gY-iMKQ");'></div>
+<div class="rounded-lg bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTmyEAYmzpJ6rxzUZY-NfXiHgj8LZG3RhA8GwfdqDG9XIrJEjtpmLbmAESaciS9HrAihVTlPDQVIF-0TQEpGRTALaf4sjMoQ1owgTG6_7uT85BKXR1PxItc8qmqyuevakHzRPTpwSGHo9ASr7sjtvsrhu3rKgtsuD0yv9AYfcGZwI_zHfwGkw9e3yMdRaQ7YyZ7HNBte6TVmF5Csi2jFzUUGAs5rpcswR2oXjhz2CHQHk1_lS2Mt6U24WPK06RQA7rTtw3gY-iMKQ");'></div>
+</div>
+</div>
+<div class="mt-16">
+<h2 class="text-3xl font-bold tracking-tight">Ulasan Pengguna</h2>
+<div class="mt-8 space-y-6">
+<div class="flex flex-col gap-4 p-5 border border-primary/20 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-bold text-primary text-xl">
+<span>AS</span>
+</div>
+<div>
+<h4 class="font-bold">Andi Setiawan</h4>
+<div class="flex items-center gap-1 text-sm text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined fill text-secondary text-base">star</span>
+<span>5.0</span>
+<span class="mx-1">•</span>
+<span>2 minggu lalu</span>
+</div>
+</div>
+</div>
+<p class="text-text-muted-light dark:text-text-muted-dark">Tempatnya super cozy buat kerja. Kopinya enak banget, baristanya juga ramah. Pasti balik lagi!</p>
+</div>
+<div class="flex flex-col gap-4 p-5 border border-primary/20 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-bold text-primary text-xl">
+<span>BP</span>
+</div>
+<div>
+<h4 class="font-bold">Bunga Pertiwi</h4>
+<div class="flex items-center gap-1 text-sm text-text-muted-light dark:text-text-muted-dark">
+<span class="material-symbols-outlined fill text-secondary text-base">star</span>
+<span>4.0</span>
+<span class="mx-1">•</span>
+<span>1 bulan lalu</span>
+</div>
+</div>
+</div>
+<p class="text-text-muted-light dark:text-text-muted-dark">Suasananya oke, tapi agak ramai pas weekend. Overall, pengalaman yang menyenangkan. Makanannya juga lumayan.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-primary/20 py-8 text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+                        © 2025 SurabayaCafeFinder. Hak Cipta Dilindungi.
+                    </footer>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tentang Kami - SurabayaCafeFinder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#A16207",
+              "background-light": "#FEFCE8",
+              "background-dark": "#1F2937",
+              "secondary": "#FDE68A",
+              "text-light": "#1F2937",
+              "text-dark": "#FEFCE8",
+              "text-muted-light": "#6b7280",
+              "text-muted-dark": "#d1d5db"
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 sm:px-10 py-4">
+<div class="flex items-center gap-3 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tighter">SurabayaCafeFinder</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-end">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="home_page.html">Beranda</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="daftar_kafe.html">Daftar Kafe</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="about_page.html">Tentang Kami</a>
+
+</nav>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<div class="text-center px-4 py-16 sm:py-20 md:py-24">
+<h1 class="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl text-primary">Tentang Kami</h1>
+<p class="mt-4 max-w-2xl mx-auto text-lg leading-8 text-text-muted-light dark:text-text-muted-dark">Menghubungkan Anda dengan kafe terbaik di Surabaya adalah misi kami.</p>
+</div>
+<!-- FeatureSection -->
+<div class="flex flex-col gap-10 px-4 py-10 @container">
+<div class="flex flex-col gap-4 text-center">
+<h2 class="tracking-tight text-3xl font-bold leading-tight sm:text-4xl">Temukan Kafe Impianmu dalam 3 Langkah Mudah</h2>
+<p class="text-base font-normal leading-normal max-w-3xl mx-auto text-text-muted-light dark:text-text-muted-dark">Platform kami dirancang untuk membuat pencarian kafe menjadi pengalaman yang sederhana dan menyenangkan.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-0">
+<div class="flex flex-1 flex-col gap-4 rounded-lg border border-primary/20 bg-background-light dark:bg-background-dark p-6 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-primary">search</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">Jelajahi</h3>
+<p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Cari kafe berdasarkan area, fasilitas, atau suasana yang Anda inginkan.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-4 rounded-lg border border-primary/20 bg-background-light dark:bg-background-dark p-6 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-primary">check_circle</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">Pilih</h3>
+<p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Lihat detail lengkap, foto, dan ulasan dari pengunjung lain untuk membuat keputusan.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-4 rounded-lg border border-primary/20 bg-background-light dark:bg-background-dark p-6 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-primary">coffee</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight">Nikmati</h3>
+<p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">Kunjungi kafe pilihan Anda dan rasakan sendiri pengalaman unik yang ditawarkan.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Section -->
+<div class="py-16 sm:py-20">
+<!-- SectionHeader -->
+<div class="text-center px-4 pb-10">
+<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Perkenalkan Tim Kami</h2>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8 p-4">
+
+  <div class="flex flex-col gap-3 text-center items-center">
+    <div class="w-40 h-40">
+      <div 
+        class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full"
+        data-alt="Photo of Achmad Ardani Saputra"
+        style='background-image: url("https://cdn-icons-png.flaticon.com/512/847/847969.png");'>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-lg font-medium leading-normal">Achmad Ardani Saputra</p>
+      <p class="text-sm font-normal leading-normal text-text-muted-light dark:text-text-muted-dark">
+        Founder & Developer
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- CTA Section -->
+<div class="bg-secondary/50 dark:bg-text-dark/10 rounded-lg text-center px-6 py-12 my-16">
+  <h2 class="text-2xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-3xl">
+    Siap Menemukan Kafe Favorit Anda?
+  </h2>
+
+  <p class="mx-auto mt-3 max-w-xl text-md leading-7 text-text-muted-light dark:text-text-muted-dark">
+    Jelajahi ratusan pilihan kafe di Surabaya sekarang juga.
+  </p>
+
+  <div class="mt-8 flex justify-center">
+    <button
+      onclick="location.href='home_page.html'"
+      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg hover:opacity-90 transition-opacity"
+    >
+      <span class="truncate">Mulai Jelajahi Sekarang</span>
+    </button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="mt-auto border-t border-primary/20 py-8 text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+                         © 2025 SurabayaCafeFinder. Hak Cipta Dilindungi.
+                    </footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

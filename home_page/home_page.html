@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Surabaya Brews - Discover Your Next Favorite Coffee Spot</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6F4E37",
+                        "secondary": "#F5F5DC",
+                        "accent": "#A9A9A9",
+                        "text-main": "#333333",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="mx-auto max-w-6xl px-4">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent/20 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-2xl">local_cafe</span>
+<h2 class="text-xl font-bold leading-tight tracking-tight">Surabaya Brews</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">List Coffee Shop</a>
+<a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-accent flex bg-secondary dark:bg-gray-700 items-center justify-center pl-3 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-main dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border-none bg-secondary dark:bg-gray-700 h-full placeholder:text-accent dark:placeholder-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-4" data-alt="Warm and inviting ambiance of a modern coffee shop" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-v878I_NWi-pKDPa2eseoH_qT1Vxyv9zRznykmCpW3tEU_YpGVRtDs0c3-AJpCSuJ2TO9jSk7LdOSY_Xlw5I4xbv4YBSMBNg2E8WTA-JTegszh7cDzBxssv1TReArbYK4mPV_GabHfrAsOIpKx16_RxUArVJ-VXXHm9-M4sISxITgM4n460LlpUJr0Zz8qeVVbyw15IdIRVAki9eXgyOQOchUE6Gco3aHoY8UxyuCFCZ-USG1F9nBvu_dCTLsRDGN-zxlrfKqCak");'>
+<div class="flex flex-col gap-4 text-center max-w-3xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Discover Your Next Favorite Coffee Spot in Surabaya.</h1>
+<h2 class="text-gray-200 text-base font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal">Find the perfect cafe experience for your mood and needs, from cozy corners to vibrant workspaces.</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 @[480px]:h-14 @[480px]:px-8 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] @[480px]:text-lg @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Explore Coffee Shops</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Introduction Section -->
+<div class="bg-secondary dark:bg-gray-800">
+<div class="mx-auto max-w-6xl px-4 py-16 sm:py-24">
+<div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+<div class="lg:w-1/2 w-full">
+<img class="rounded-lg object-cover w-full h-full aspect-[4/3]" data-alt="Close-up of a barista pouring latte art into a cup of coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkgKPyP41qlBLyHqZq2EKBBGyWxQCVOXEjr0i6hxswBx0ZPljsaFktZGPmNtTtTBaVMv2Nrj-IstKaUjko6Fnq329zkf7epw5hKbqLcf4Vi-xrAwYqvrv_PWEALtkwDFzLDBShPwiTS_pFbbvx8AWDVc_cxFRmMl5obdoIHTm6E-V9sRYAO714VOZLrp44K-e1f0sXe9LF4qMVtoD_rXisMyCy1TnHRaI_U91hi_2SlIfl6F2Bw-PeQbWh3jRo1CEI3PLcMEUQuYo"/>
+</div>
+<div class="lg:w-1/2 flex flex-col gap-4">
+<h2 class="text-text-main dark:text-gray-100 tracking-tight text-3xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-bold @[480px]:leading-tight max-w-lg">Your Guide to Surabaya's Coffee Scene</h2>
+<p class="text-text-main/80 dark:text-gray-300 text-base font-normal leading-relaxed max-w-lg">Our mission is to curate and list the best local coffee shops, helping you discover hidden gems and popular spots alike. Dive into the rich coffee culture of Surabaya with us.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Shops Section -->
+<div class="mx-auto max-w-6xl px-4 py-16 sm:py-24">
+<h2 class="text-text-main dark:text-gray-100 text-3xl font-bold leading-tight tracking-tight pb-8 text-center">Featured This Week</h2>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-4">
+<div class="flex items-stretch px-4 gap-6">
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-gray-800 shadow-md min-w-72 hover:shadow-xl transition-shadow">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-t-lg" data-alt="Interior of a cozy, well-lit coffee shop with comfortable seating." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7sIWaLTUzxmIrBNtz2UG7RXrQusdbLkz9sDzHyAqbfOPdxj9FbHdwl1sdw7LIv0dceqBd27JrQ2nkdmBTa70a5cvsOnjjpx4zXQgqlc-_Hq-ENXBV_Dt4ERZxcZK-E6xFlUf-mZmCliDf6NvBs7VOTDZbMune7nI-optbKgtXQEQf5zU3ogdDNzjHMSnG6EBtIJv37VPK_s5WZq0WyzNAiD6bO_DyWwahUHQF6GOQijDOgj5HNCQrcz8n44YFge_k3Ff6Mo8Ts78");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-text-main dark:text-gray-100 text-lg font-bold leading-normal">Kopi Tenang</p>
+<p class="text-accent dark:text-gray-400 text-sm font-normal leading-normal">Cozy, Work-friendly</p>
+</div>
+<button class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-secondary dark:bg-gray-700 text-text-main dark:text-gray-200 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-accent/20 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">View Details</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-gray-800 shadow-md min-w-72 hover:shadow-xl transition-shadow">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-t-lg" data-alt="A minimalist cafe with large windows and plenty of natural light." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtUlIT5yhq4EUf9-hgVLB8bL3JcPHYRjRBeDeRLaZxznkI_aIyONurw4mZJvryrzNttW9DCDEKUWqovcYrCBJZL9qbYjXPBSU63uKaHHhEuw5fWERwaMOnCx0EqWRb_WDEFDvUMDlhVXQ4zhdrOe-XsSIbR_c1q6zslx79gXlviul40eu197oMuBHdROAP8oF_Vc_wzFeXw_O_UzmIQphILvVikGMvbNHpg0UkpXyRFx2c-Tl8h9llAeXYivbWQaYE0pPHBJS43kY");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-text-main dark:text-gray-100 text-lg font-bold leading-normal">Kafe Cerah</p>
+<p class="text-accent dark:text-gray-400 text-sm font-normal leading-normal">Minimalist, Natural Light</p>
+</div>
+<button class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-secondary dark:bg-gray-700 text-text-main dark:text-gray-200 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-accent/20 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">View Details</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-gray-800 shadow-md min-w-72 hover:shadow-xl transition-shadow">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-t-lg" data-alt="An artisanal coffee setup with pour-over equipment and specialty beans." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBk1t4XlVSg2i9-oAWdyIXZJDHsD6lsu4ATFCPdDf7IUbI9rJLyS-i0cECjiYomy1jN9McaXQP7_MbSZbxzbw20nTeVQuVsS_XL2wxvRBGzkaDS9pkr_YbnxiYPT6qCYUFHIehbUoldi9IX2wosA8Ct7t4ifQoB-JP7k_6iaXYGYH9P3VIGwntwFEDMCz7yK1fA-66UKkCF3MCFe67N_k-M9Eg7vp1m4aRq4zi5-y3XNJ5JQQaXEgWlpVGr-XIqCKj0I1E7sjP1o7g");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-text-main dark:text-gray-100 text-lg font-bold leading-normal">Seni Seduh</p>
+<p class="text-accent dark:text-gray-400 text-sm font-normal leading-normal">Artisanal, Specialty Coffee</p>
+</div>
+<button class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-secondary dark:bg-gray-700 text-text-main dark:text-gray-200 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-accent/20 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">View Details</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-gray-800 shadow-md min-w-72 hover:shadow-xl transition-shadow">
+<div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-t-lg" data-alt="A coffee shop with a relaxed outdoor patio area, friendly to pets." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDW9UuCagR19Wf_1MeMLqzXmlp8re0Rs92HtZSoBl8l8kd-32zSDIfdUSQt2uqlZ_2oZA4XR_J4nKBwAV8vR9sr5UOEf66y72C__3iGQgl09IritZe4-xfiR1h0ctVgp0SehZFQo-9V7EC9bVDLaMJiX71U7lBH7XUQXToOfuEZAiyAhUXxugCFRRfbT-MwvV3FkqLzWZIQwGiYnyDBICycUJOT2zF0bU24MtUCSNx7pmUXOYpOwpS3hq9FFe-ug1mBV4mjo_sD8D4");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-text-main dark:text-gray-100 text-lg font-bold leading-normal">Sudut Santai</p>
+<p class="text-accent dark:text-gray-400 text-sm font-normal leading-normal">Outdoor, Pet-friendly</p>
+</div>
+<button class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-secondary dark:bg-gray-700 text-text-main dark:text-gray-200 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-accent/20 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">View Details</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary CTA Section -->
+<div class="bg-secondary dark:bg-gray-800">
+<div class="mx-auto max-w-6xl px-4 py-16 sm:py-20 text-center">
+<div class="flex flex-col items-center gap-4">
+<h2 class="text-text-main dark:text-gray-100 text-3xl font-bold leading-tight tracking-tight max-w-2xl">Ready to find your perfect brew?</h2>
+<p class="text-text-main/80 dark:text-gray-300 text-base font-normal leading-relaxed max-w-xl">Browse our complete directory of Surabaya's finest coffee shops and filter by atmosphere, amenities, and more.</p>
+<button class="mt-4 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">View Full Directory</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-gray-300">
+<div class="mx-auto max-w-6xl px-4 py-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-2xl">local_cafe</span>
+<h2 class="text-xl font-bold leading-tight tracking-tight">Surabaya Brews</h2>
+</div>
+<nav class="flex gap-6">
+<a class="text-sm font-medium hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm font-medium hover:text-white transition-colors" href="#">Contact Us</a>
+</nav>
+<div class="flex gap-4">
+<a class="text-gray-300 hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.161 3.403h2.322c-.026.478-.052.956-.078 1.434h-2.166c.026-.478.052-.956.078-1.434zM12 16a4 4 0 100-8 4 4 0 000 8zm0-1.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="mt-8 border-t border-accent/20 pt-8 text-center text-sm text-gray-400">
+<p>© 2024 Surabaya Brews. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
